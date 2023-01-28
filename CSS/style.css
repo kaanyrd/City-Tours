@@ -256,5 +256,62 @@ p {
 }
 /* END OF ABOUT */
 /* SERVICES */
-
+.services{
+    background-color: #f1f5f8;
+}
+.service{
+    margin-bottom: 3rem;
+}
+.services-title{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 1rem ;
+}
+.services-title-second{
+    color: var(--clr-primary-5);
+}
+.services-center{
+    max-width: 1170px;
+    width: 90vw;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem 0;
+}
+.service-info-text{
+    max-width: 19rem;
+    margin: 0 auto;
+    /* letter-spacing: 1.1px; */
+}
+.service-icon{
+    display: inline-block;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding: .5rem .5rem;
+    border-radius: 1rem;
+    background-color: var(--clr-primary-5);
+}
+@media screen and (min-width: 576px){
+    .services-scroll{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .service{
+        flex: 0 0 calc(50% - 2rem);
+    }
+}
+@media screen and (min-width: 992px){
+    .service{
+        flex: 0 0 calc(33.33% - 2rem);
+    }
+}
+@media screen and (min-width: 1070px){
+    .service{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
 /* END OF SERVICES */

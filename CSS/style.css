@@ -25,6 +25,7 @@
     --ff-main: "Lato", sans-serif;
     --transition: all .3s linear;
     --radius: .5rem;
+    --spacing: 1.3px;
     --ligth-shadow: 0px 5px 15px rgba(0, 0, 0, .1);
     --dark-shadow: 0px 5px 15px rgba(0, 0, 0, .3);
 }
@@ -174,30 +175,36 @@ p {
         background: linear-gradient(rgba(44, 174, 186, .7), rgba(0, 0, 0, 0.7)), url("../imgs/main.jpeg") center/cover no-repeat fixed;
     }
 }
+
 /* END OF HEADER */
 /* ABOUT */
-.section{
+.section {
     padding: 4rem 0;
 }
-.section-center{
+
+.section-center {
     max-width: 1170px;
     width: 90vw;
     margin: 0 auto;
 }
-.about-title{
+
+.about-title {
     text-align: center;
     text-transform: uppercase;
     font-size: 2rem;
     letter-spacing: 2px;
     margin-bottom: 3rem;
 }
-.about-title-second{
+
+.about-title-second {
     color: var(--clr-primary-5);
 }
-.about-info-title{
+
+.about-info-title {
     margin: 1.5rem 0;
 }
-.btn-about{
+
+.btn-about {
     display: inline-block;
     background-color: var(--clr-primary-5);
     color: white;
@@ -208,36 +215,42 @@ p {
     border: 3px solid var(--clr-primary-5);
     transition: var(--transition);
 }
-.btn-about:hover{
+
+.btn-about:hover {
     color: var(--clr-primary-5);
     background-color: #fff;
     border: 3px solid var(--clr-primary-5);
 }
-.about-img-self{
+
+.about-img-self {
     border-radius: .5rem;
 }
-@media screen and (min-width: 992px){
-    .section-scroll{
+
+@media screen and (min-width: 992px) {
+    .section-scroll {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
     }
+
     .about-img-container,
-    .about-info{
+    .about-info {
         flex: 0 0 calc(50% - 2rem);
     }
-    .about-img-container{
+
+    .about-img-container {
         position: relative;
     }
-    
-    .about-title{
+
+    .about-title {
         font-size: 3rem;
         margin-bottom: 4rem;
     }
 }
-@media screen and (min-width: 1070px){
-    .about-img-container::before{
+
+@media screen and (min-width: 1070px) {
+    .about-img-container::before {
         position: absolute;
         content: "";
         top: -30px;
@@ -249,41 +262,49 @@ p {
         z-index: -2;
         transition: all .5s ease-in-out;
     }
-    .about-img-container:hover::before{
+
+    .about-img-container:hover::before {
         top: 0;
         left: 0;
     }
 }
+
 /* END OF ABOUT */
 /* SERVICES */
-.services{
+.services {
     background-color: #f1f5f8;
 }
-.service{
+
+.service {
     margin-bottom: 3rem;
 }
-.services-title{
+
+.services-title {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin: 1rem ;
+    margin: 1rem;
 }
-.services-title-second{
+
+.services-title-second {
     color: var(--clr-primary-5);
 }
-.services-center{
+
+.services-center {
     max-width: 1170px;
     width: 90vw;
     margin: 0 auto;
     text-align: center;
     padding: 2rem 0;
 }
-.service-info-text{
+
+.service-info-text {
     max-width: 19rem;
     margin: 0 auto;
     /* letter-spacing: 1.1px; */
 }
-.service-icon{
+
+.service-icon {
     display: inline-block;
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -291,27 +312,231 @@ p {
     border-radius: 1rem;
     background-color: var(--clr-primary-5);
 }
-@media screen and (min-width: 576px){
-    .services-scroll{
+
+@media screen and (min-width: 576px) {
+    .services-scroll {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
     }
-    .service{
+
+    .service {
         flex: 0 0 calc(50% - 2rem);
     }
 }
-@media screen and (min-width: 992px){
-    .service{
+
+@media screen and (min-width: 992px) {
+    .service {
         flex: 0 0 calc(33.33% - 2rem);
     }
 }
-@media screen and (min-width: 1070px){
-    .service{
+
+@media screen and (min-width: 1070px) {
+    .service {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
     }
 }
+
 /* END OF SERVICES */
+/* TOURS */
+.tours-center {
+    max-width: 1170px;
+    width: 87vw;
+    margin: 0 auto;
+}
+
+.tours-title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.btn-tours-side {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.btn-tours {
+    border: transparent;
+    text-transform: uppercase;
+    background-color: var(--clr-primary-5);
+    color: white;
+    font-size: 1rem;
+    padding: .5rem 1.2rem;
+    letter-spacing: 1.5px;
+    transition: var(--transition);
+}
+
+.btn-tours:hover {
+    color: var(--clr-primary-1);
+    background-color: var(--clr-primary-8);
+}
+
+.tour {
+    background-color: #d6dee4;
+    border-radius: 10px;
+    transition: var(--transition);
+    box-shadow: var(--ligth-shadow);
+    margin-bottom: 2rem;
+}
+
+.tour:hover {
+    box-shadow: var(--dark-shadow);
+    transform: scale(1.02);
+}
+
+.tour-img-container {
+    position: relative;
+}
+
+.tour-img-self {
+    height: 17rem;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.tour-img-info {
+    background-color: var(--clr-primary-5);
+    color: black;
+    font-weight: bolder;
+    padding: .1rem .5rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-transform: capitalize;
+    letter-spacing: 1.2px;
+    border-top-left-radius: 10px;
+    /* border-bottom-left-radius: 10px; */
+}
+
+.tour-bottom {
+    padding: .8rem 1.3rem;
+}
+
+.tour-info-title {
+    text-transform: capitalize;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    margin-bottom: .5rem;
+}
+
+.tour-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.tour-footer-icon,
+.tour-footer-day,
+.tour-footer-price {
+    margin-bottom: 0;
+    text-transform: capitalize;
+    color: var(--clr-primary-5);
+    font-weight: bolder;
+}
+
+@media screen and (min-width: 768px) {
+    .tours-scroll {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .tour {
+        flex: 0 0 calc(50% - 1rem);
+    }
+}
+
+@media screen and (min-width: 1170px) {
+    .tour {
+        flex: 0 0 calc(33.33% - 1.5rem);
+    }
+
+    .tours-scroll {
+        gap: 2rem 0rem;
+    }
+}
+
+/* END OF TOURS */
+/* CONTACT */
+.contact {
+    background-color: var(--clr-primary-5);
+}
+.contact-center {
+    /* border: 3px solid red; */
+    max-width: 1170px;
+    width: 90vw;
+    margin: 0 auto;
+}
+.contact-info {
+    color: white;
+}
+.contact-form-self {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.email {
+    padding: .6rem .5rem;
+    text-transform: lowercase;
+    font-family: var(--ff-main);
+    color: var(--clr-primary-3);
+    letter-spacing: 3.5px;
+    flex: 1 1;
+}
+.email::placeholder {
+    color: var(--clr-primary-3);
+    font-size: 1rem;
+    font-family: var(--ff-main);
+    /* border: 3px solid red; */
+}
+.btn-submit {
+    padding: 0 .6rem;
+    background-color: var(--clr-primary-8);
+    color: var(--clr-primary-1);
+    border: none;
+    margin-left: .5rem;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 1rem;
+    letter-spacing: 3.5px;
+    border-radius: 5px;
+}
+.btn-submit:hover {
+    background-color: var(--clr-primary-1);
+    color: var(--clr-primary-5);
+}
+.contact-info-text {
+    color: var(--clr-primary-8);
+}
+.contact-form{
+    max-width: 28rem;
+}
+@media screen and (min-width: 992px) {
+    .contact-scroll {
+        /* border: 3px solid red; */
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .contact-form{
+        max-width: 100%;
+        flex: 1 1;
+        margin-left: 2rem;
+    }
+}
+/* END OF CONTACT */
+
+
+
+
+
+
+/* ABOUT US YAZIYI RESİMLE ORTALA */

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
 /* GLOBAL VARIABLES */
 :root {
     --clr-primary-1: hsl(184, 91%, 17%);
@@ -27,6 +28,7 @@
     --ligth-shadow: 0px 5px 15px rgba(0, 0, 0, .1);
     --dark-shadow: 0px 5px 15px rgba(0, 0, 0, .3);
 }
+
 /* END OF GLOBAL VARIABLES */
 /* GLOBAL CLASSES */
 * {
@@ -115,4 +117,62 @@ p {
         line-height: 1;
     }
 }
+
 /* END OF GLOBAL CLASSES */
+/* HEADER */
+.hero {
+    background: var(--clr-primary-5);
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-center {
+    text-align: center;
+}
+
+.hero-title {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+}
+
+.hero-text {
+    /* line-height: 1.7; */
+    color: white;
+    font-size: 1.2rem;
+    letter-spacing: 1.2px;
+    max-width: 40rem;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+.hero-btn {
+    margin-top: 2rem;
+    display: inline-block;
+    color: var(--clr-primary-5);
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    padding: .6rem 1.6rem;
+    background: white;
+    font-weight: 400;
+    border: 3px solid white;
+    transition: var(--transition);
+}
+
+.hero-btn:hover {
+    background-color: transparent;
+    color: white;
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        background: linear-gradient(rgba(44, 174, 186, .7), rgba(0, 0, 0, 0.7)), url("../imgs/main.jpeg") center/cover no-repeat fixed;
+    }
+}
+
+/* END OF HEADER */

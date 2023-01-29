@@ -538,7 +538,8 @@ p {
 
 .tour-img-self {
     height: 17rem;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -641,6 +642,34 @@ p {
     flex: 1 1;
 }
 
+.email::-webkit-input-placeholder {
+    color: var(--clr-primary-3);
+    font-size: 1rem;
+    font-family: var(--ff-main);
+    /* border: 3px solid red; */
+}
+
+.email::-moz-placeholder {
+    color: var(--clr-primary-3);
+    font-size: 1rem;
+    font-family: var(--ff-main);
+    /* border: 3px solid red; */
+}
+
+.email:-ms-input-placeholder {
+    color: var(--clr-primary-3);
+    font-size: 1rem;
+    font-family: var(--ff-main);
+    /* border: 3px solid red; */
+}
+
+.email::-ms-input-placeholder {
+    color: var(--clr-primary-3);
+    font-size: 1rem;
+    font-family: var(--ff-main);
+    /* border: 3px solid red; */
+}
+
 .email::placeholder {
     color: var(--clr-primary-3);
     font-size: 1rem;
@@ -701,7 +730,8 @@ p {
 .gallery-photo-self {
     transition: var(--transition);
     height: 17rem;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .gallery-photo-container:hover .gallery-photo-self {

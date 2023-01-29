@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="FontAwesome/css/all.css">
     <!-- CSS ADDED -->
     <link rel="stylesheet" href="CSS/style.css">
+    <!-- FAVICON ADDED -->
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <!-- PAGE TITLE ADDED -->
     <title>City Tours</title>
 </head>
 
@@ -17,26 +20,28 @@
     <nav class="navbar">
         <div class="navbar-center scroll-links">
             <div class="navbar-top-side">
-                <img class="navbar-logo" src="imgs/logo.svg" alt="">
+                <a class="navbar-logo" href="index.html">
+                    <img  src="imgs/logo.svg" alt="">
+                </a>
                 <button class="navbar-bars" id="navbar-bars">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
             <ul class="navbar-links" id="navbar-links">
                 <li>
-                    <a class="navbar-link" href="">home</a>
+                    <a class="navbar-link" href="#home">home</a>
                 </li>
                 <li>
-                    <a class="navbar-link" href="">about</a>
+                    <a class="navbar-link" href="#about">about</a>
                 </li>
                 <li>
-                    <a class="navbar-link" href="">services</a>
+                    <a class="navbar-link" href="#services">services</a>
                 </li>
                 <li>
-                    <a class="navbar-link" href="">featured</a>
+                    <a class="navbar-link" href="#tours">featured</a>
                 </li>
                 <li>
-                    <a class="navbar-link" href="">gallery</a>
+                    <a class="navbar-link" href="#gallery">gallery</a>
                 </li>
             </ul>
             <ul class="navbar-icons">
@@ -54,17 +59,17 @@
     </nav>
     <!-- END OF NAVBAR -->
     <!-- HEADER -->
-    <header class="hero">
+    <header class="hero" id="home">
         <div class="hero-center">
             <h1 class="hero-title">continue exploring</h1>
             <p class="hero-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis inventore fugiat eius
                 reprehenderit architecto ullam.</p>
-            <a class="hero-btn" href="">explore tourse</a>
+            <a class="hero-btn" href="#tours">explore tourse</a>
         </div>
     </header>
     <!-- END OF HEADER -->
     <!-- ABOUT -->
-    <section class="section">
+    <section class="section" id="about">
         <h2 class="about-title">about <span class="about-title-second">us</span></h2>
         <div class="section-center section-scroll">
             <article class="about-img-container">
@@ -82,7 +87,7 @@
     </section>
     <!-- END OF ABOUT -->
     <!-- SERVICES -->
-    <section class="section services">
+    <section class="section services" id="services">
         <h2 class="services-title">our <span class="services-title-second">services</span></h2>
         <!-- div eklenecek -->
         <div class="services-center services-scroll">
@@ -120,7 +125,7 @@
     </section>
     <!-- END OF SERVICES -->
     <!-- FEATURED TOURS -->
-    <section class="section">
+    <section class="section" id="tours">
         <h1 class="tours-title">featured <span class="tours-title-second">tours</span></h1>
         <div class="tours-center tours-scroll">
             <article class="tour">
@@ -219,12 +224,12 @@
             </article>
         </div>
         <div class="btn-tours-side">
-            <a class="btn-tours" href="">all tours</a>
+            <a class="btn-tours" href="#gallery">all tours</a>
         </div>
     </section>
     <!-- END OF FEATURED TOURS -->
     <!-- CONTACT -->
-    <section class="section contact">
+    <section class="section contact" id="contact">
         <div class="contact-center contact-scroll">
             <article class="contact-info">
                 <h3 class="contact-info-title">want latest tour info and updates ?</h3>
@@ -240,7 +245,7 @@
     </section>
     <!-- END OF CONTACT -->
     <!-- GALLERY -->
-    <section class="gallery">
+    <section class="gallery" id="gallery">
         <div class="gallery-center">
             <article class="gallery-photo-container">
                 <img class="gallery-photo-self" src="imgs/tour-1.jpeg" alt="">
@@ -295,44 +300,45 @@
     <!-- END OF GALLERY -->
     <!-- FOOTER -->
     <footer class="footer">
-            <div class="footer-center footer-scroll">
-                <ul class="footer-links">
-                    <li>
-                        <a class="footer-link" href="">home</a>
-                    </li>
-                    <li>
-                        <a class="footer-link" href="">about</a>
-                    </li>
-                    <li>
-                        <a class="footer-link" href="">services</a>
-                    </li>
-                    <li>
-                        <a class="footer-link" href="">featured</a>
-                    </li>
-                    <li>
-                        <a class="footer-link" href="">gallery</a>
-                    </li>
-                </ul>
-                <div class="footer-icons">
-                    <span class="footer-icon">
-                        <i class="fa-brands fa-facebook"></i>
-                    </span>
-                    <span class="footer-icon">
-                        <i class="fa-brands fa-instagram"></i>
-                    </span>
-                    <span class="footer-icon">
-                        <i class="fa-brands fa-twitter"></i>
-                    </span>
-                </div>
-                <div class="footer-info">
-                    <p class="footer-info-text">
-                        copyright &copy; backroads travel tour company 2023. all rights reserved.
-                    </p>
-                </div>
+        <div class="footer-center footer-scroll">
+            <ul class="footer-links">
+                <li>
+                    <a class="footer-link" href="#home">home</a>
+                </li>
+                <li>
+                    <a class="footer-link" href="#about">about</a>
+                </li>
+                <li>
+                    <a class="footer-link" href="#services">services</a>
+                </li>
+                <li>
+                    <a class="footer-link" href="#tours">tours</a>
+                </li>
+                <li>
+                    <a class="footer-link" href="#gallery">gallery</a>
+                </li>
+            </ul>
+            <div class="footer-icons">
+                <span class="footer-icon">
+                    <i class="fa-brands fa-facebook"></i>
+                </span>
+                <span class="footer-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </span>
+                <span class="footer-icon">
+                    <i class="fa-brands fa-twitter"></i>
+                </span>
             </div>
+            <div class="footer-info">
+                <p class="footer-info-text">
+                    copyright &copy; backroads travel tour company 2023. all rights reserved.
+                </p>
+            </div>
+        </div>
     </footer>
     <!-- END OF FOOTER -->
 </body>
 <!-- JS ADDED -->
 <script src="JS/app.js"></script>
+
 </html>

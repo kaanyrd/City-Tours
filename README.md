@@ -4,4 +4,4 @@
 ## https://city-tours-company-site.netlify.app
 ## AS VIEW
 
-![For DESKTOP](https://user-images.githubusercontent.com/59180837/215345751-dad606ad-29ab-4a32-bdc2-cfd05db27b2d.png)
+![For DESKTOP](https://user-images.githubusercontent.com/59180837/215345859-1f3688fc-669c-4f89-a9cd-b5ffb92acd15.png)

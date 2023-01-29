@@ -472,6 +472,7 @@ p {
     max-width: 1170px;
     width: 90vw;
     margin: 0 auto;
+    padding: 1rem 0;
 }
 .contact-info {
     color: white;
@@ -483,6 +484,7 @@ p {
 }
 .email {
     padding: .6rem .5rem;
+    border: none;
     text-transform: lowercase;
     font-family: var(--ff-main);
     color: var(--clr-primary-3);
@@ -533,10 +535,114 @@ p {
     }
 }
 /* END OF CONTACT */
+/* GALLERY */
+.gallery-photo-container{
+    position: relative;
+    background-color: var(--clr-primary-5);
+}
+.gallery-photo-self{
+    transition: var(--transition);
+    height: 17rem;
+    object-fit: cover;
+}
+.gallery-photo-container:hover .gallery-photo-self{
+    opacity: .5;
+}
+.gallery-icon{
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 2.5rem;
+    opacity: 0;
+    transition: var(--transition);
+}
+.gallery-photo-container:hover .gallery-icon{
+    opacity: 1;
+}
+@media screen and (min-width: 768px){
+    .gallery-center{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .gallery-photo-container{
+        flex: 0 0 50%;
+    }
+}
+@media screen and (min-width: 992px){
+    .gallery-photo-container{
+        flex: 0 0 25%;
+    }
+}
+/* END OF GALLERY */
+/* FOOTER */
+.footer{
+    background-color: var(--clr-grey-1);
+    padding: 4rem 0;
+}
+.footer-center{
+    max-width: 1170px;
+    width: 80vw;
+    margin: 0 auto;
+}
+.footer-links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0 2rem;
+}
+.footer-link{
+    text-transform: uppercase;
+    color: white;
+    transition: var(--transition);
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+}
+.footer-link:hover{
+    color: var(--clr-primary-8);
+}
+.footer-icons{
+    font-size: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem 2.5rem;
+}
+.footer-icon{
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--clr-primary-8);
+    transition: var(--transition);
+}
+.footer-icon:hover{
+    color: var(--clr-primary-4);
+}
+.footer-info{
 
+}
+.footer-info-text{
+    text-transform: capitalize;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+.footer-links,
+.footer-icons,
+.footer-info{
+    /* border: 3px solid red; */
+    margin-bottom: 1rem;
+}
 
-
-
+/* END OF FOOTER */
 
 
 /* ABOUT US YAZIYI RESİMLE ORTALA */
+/* OUR SERVICES TEXT ALIGN LEFT OLMALI */
